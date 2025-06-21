@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Progress } from '@/components/ui/progress';
+// import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { 
@@ -16,7 +16,7 @@ import {
   Home,
   Utensils,
   ShoppingBag,
-  Calculator,
+  Calculator as CalculatorIcon,
   Settings,
   Share2,
   Download,
@@ -436,7 +436,7 @@ Thank you for using EcoTrack to monitor your carbon footprint!`;
               <CardContent className="space-y-3">
                 <Link href="/track">
                   <Button className="w-full bg-emerald-600 hover:bg-emerald-700">
-                    <Calculator className="h-4 w-4 mr-2" />
+                    <CalculatorIcon className="h-4 w-4 mr-2" />
                     Recalculate Footprint
                   </Button>
                 </Link>
@@ -494,7 +494,7 @@ Thank you for using EcoTrack to monitor your carbon footprint!`;
                   </div>
                   <div className="text-sm text-gray-500">Your Current Emissions</div>
                 </div>
-                <Progress value={Math.max(0, goalProgress)} className="h-2" />
+                {/* <Progress value={Math.max(0, goalProgress)} className="h-2" /> */}
                 <div className="text-sm text-gray-600">
                   {goalProgress > 0 
                     ? `You're doing great! Your emissions are ${goalProgress}% lower than your target` 

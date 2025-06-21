@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Progress } from '@/components/ui/progress';
+// import { Progress } from '@/components/ui/progress';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
 import { 
@@ -155,7 +155,7 @@ export default function TrackPage() {
             </div>
           </div>
           
-          <Progress value={(currentStep / steps.length) * 100} className="mb-6" />
+          {/* <Progress value={(currentStep / steps.length) * 100} className="mb-6" /> */}
           
           {/* Step Navigation */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

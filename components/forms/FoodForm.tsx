@@ -46,13 +46,13 @@ export default function FoodForm({ onComplete, initialData = {} }: FoodFormProps
   };
 
   const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({
+    setFormData((prev: typeof formData) => ({
       ...prev,
       [field]: value
     }));
     
     if (errors[field]) {
-      setErrors(prev => ({
+      setErrors((prev: typeof errors) => ({
         ...prev,
         [field]: ''
       }));
@@ -248,7 +248,7 @@ export default function FoodForm({ onComplete, initialData = {} }: FoodFormProps
 
       <div className="flex justify-end">
         <Button type="submit" className="bg-emerald-600 hover:bg-emerald-700">
-          Continue to Shopping
+          Continue
         </Button>
       </div>
     </form>

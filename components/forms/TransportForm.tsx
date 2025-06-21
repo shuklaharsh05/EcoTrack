@@ -54,7 +54,7 @@ export default function TransportForm({ onComplete, initialData = {} }: Transpor
   };
 
   const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({
+    setFormData((prev: typeof formData) => ({
       ...prev,
       [field]: value
     }));

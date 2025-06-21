@@ -32,7 +32,7 @@ export default function ShoppingForm({ onComplete, initialData = {} }: ShoppingF
   };
 
   const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({
+    setFormData((prev: typeof formData) => ({
       ...prev,
       [field]: value
     }));
